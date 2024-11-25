@@ -2,7 +2,7 @@
 An example of an travel manager webpage.
 
 ## 🔎 View 
-![Image04](../img/04.PNG)
+![image](./images/readme-img.png)
 
 ## 🛠️ How to use
 * Clone or download this repository to your local machine.

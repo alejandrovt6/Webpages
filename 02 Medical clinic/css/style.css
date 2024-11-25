@@ -1,0 +1,148 @@
+/******************************* 
+GOOGLE FONTS
+********************************/
+
+
+/******************************* 
+GENERAL
+********************************/
+* {
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/******************************* 
+VARIABLES
+********************************/
+:root {
+    --main: #173444;
+    --main-light: #1f4764;
+    --main-dark: #0e1f2b;
+    --bg: #f4f7f9;
+    --bg-light: #ffffff;
+    --text-dark: #173444;
+    --text-light: #f4f7f9;
+    --border: #b0c4de;
+}
+
+body {
+    color: var(--bg);
+    background-color: var(--body);
+}
+
+img {
+    width: 100%
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+   list-style-type: none; 
+}
+
+.container {
+   max-width: 960px;
+   margin: auto;
+   width: 100%;
+}
+
+/*******************************
+HEADER
+********************************/
+header {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 4rem;
+    height: auto;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.contact:hover {
+    transform: translateY(-2px);
+}
+
+.contact i {
+    font-size: 1.3rem;
+    color: var(--main);
+}
+
+.contact a {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: var(--main-light);
+}
+
+/*******************************
+NAVBAR
+********************************/
+.navbar {
+    background: var(--main);
+    padding: 0.5rem 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: var(--main-light);
+    color: var(--bg-light);
+}
