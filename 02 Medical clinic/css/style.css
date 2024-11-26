@@ -29,11 +29,6 @@ VARIABLES
     --border: #b0c4de;
 }
 
-body {
-    color: var(--bg);
-    background-color: var(--body);
-}
-
 img {
     width: 100%
 }
@@ -72,6 +67,17 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+.logo {
+    display: flex;
+}
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--main);
+    margin-left: 1rem;
+    transform: translateY(1rem);
 }
 
 .logo img {
@@ -145,4 +151,313 @@ NAVBAR
 .navbar a:hover {
     background-color: var(--main-light);
     color: var(--bg-light);
+}
+
+/*******************************
+CARROUSEL HEADER
+********************************/
+.head-img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.head-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.head-img img.active {
+    opacity: 1;
+}
+
+/*******************************
+ABOUT US
+********************************/
+.about-us {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    color: var(--main);
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 60%;
+    text-align: justify;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--main);
+    font-weight: 600;
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--main);
+    margin: 2rem 0 1.5rem 0;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-about {
+    background-color: var(--main);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--main-dark);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem auto 0;
+}
+
+button:hover {
+    background-color: var(--main-light);
+}
+
+.about-img {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.about-img img {
+    width: 80%;
+    height: 90%;
+}
+
+/*******************************
+SERVICES
+********************************/
+.services {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-box {
+    background-color: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    width: 250px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-img {
+    width: 12rem; 
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.service-name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--main);
+}
+
+.btn-services {
+    background-color: var(--main);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-services:hover {
+    background-color: var(--main-light);
+}
+
+/*******************************
+VISIT US
+********************************/
+.visit-us {
+    background: var(--main);
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.visit-subtitle {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--bg);
+}
+
+/*******************************
+CONTACT US
+********************************/
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    gap: 2rem;
+}
+
+.map-container,
+.form-container {
+    flex: 1;
+}
+
+.map-container iframe {
+    width: 100%; 
+}
+
+.form-container {
+    max-width: 400px; 
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.half:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.btn-submit {
+    background-color: var(--main);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--main-light);
+}
+
+/*******************************
+FOOTER
+********************************/
+.footer {
+    background-color: var(--main);
+    color: var(--text-light);
+    padding: 1.5rem 0;
+    margin-top: 1.5rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1; 
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-logo-img {
+    max-width: 100px; 
+    margin-top: 0.5rem; 
+}
+
+
+.footer-contact,
+.footer-legal {
+    flex: 1;
+}
+
+.footer h3 {
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    padding: 0; 
+}
+
+.footer li {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: var(--text-light); 
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }

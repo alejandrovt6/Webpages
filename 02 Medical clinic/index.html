@@ -10,9 +10,10 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header">
+        <div class="header" id="home" >
             <div class="logo">
                 <img src="./img/logo.png" alt="logo">
+                <h2 class="logo-text">Medical Clinic</h2>
             </div>
             <div class="info">
                 <div class="contact">
@@ -27,10 +28,136 @@
         </div>
         <div class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About us</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+        <div class="head-img">
+            <img src="./img/head1.jpg" alt="head1" class="active">
+            <img src="./img/head2.jpg" alt="head2">
+            <img src="./img/head3.jpg" alt="head3">
+        </div>
     </header>
+    <!-- ABOUT US -->
+    <section class="about-us" id="about-us">
+        <div class="about-text">
+            <h2 class="about-title title">Medical Center in London</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam odio nisi cumque totam? Fugiat beatae, animi eum ducimus dicta totam reprehenderit, dignissimos, ratione eveniet numquam esse qui perferendis obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, ipsa. Eligendi temporibus aliquid perferendis amet voluptate, fugit saepe incidunt modi qui? Consectetur in, repudiandae iure debitis perferendis veritatis nam corporis rem vel molestiae necessitatibus. Aut nostrum exercitationem voluptatibus voluptates reiciendis!</p>
+            <h3 class="about-subtitle subtitle">Specialist medical team and precise diagnostic tests</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae quidem incidunt tenetur deserunt consectetur? Quod unde architecto quis cumque, voluptate facilis velit omnis necessitatibus a exercitationem cum suscipit. Provident, dolorem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit natus iusto suscipit facere officia blanditiis exercitationem, consectetur similique quas id dolorum recusandae, corrupti quo. Ab impedit neque minima officia tempore.</p>
+            <button class="btn btn-about">Schedule appointment now</button>
+        </div>
+        <div class="about-img">
+            <img src="./img/doctor1.jpg" alt="doctor">
+        </div>
+    </section>
+    <!-- SERVICES -->
+     <section class="services" id="services">
+        <h2 class="services-title title">Our Services</h2>
+        <div class="service">
+            <div class="service-box">
+                <img src="./img/service1.jpg" class="service-img" alt="service1">
+                <h3 class="service-name">Cardiology</h3>
+                <button class="btn btn-services">More info</button>
+            </div>
+            <div class="service-box">
+                <img src="./img/service1.jpg" class="service-img" alt="service2">
+                <h3 class="service-name">Neurology</h3>
+                <button class="btn btn-services">More info</button>
+            </div>
+            <div class="service-box">
+                <img src="./img/service1.jpg" class="service-img" alt="service3">
+                <h3 class="service-name">Orthopedics</h3>
+                <button class="btn btn-services">More info</button>
+            </div>
+            <div class="service-box">
+                <img src="./img/service1.jpg" class="service-img" alt="service4">
+                <h3 class="service-name ">Urology</h3>
+                <button class="btn btn-services">More info</button>
+            </div>
+        </div>
+     </section>
+     <section class="visit-us">
+        <div class="visit-text">
+            <h3 class="visit-subtitle subtitle">Visit us and meet our professionals.</h3>
+            <h3 class="visit-subtitle subtitle">We are waiting for you.</h3>
+        </div>
+     </section>
+    <!-- CONTACT US -->
+    <section class="contact-section" id="contact">
+        <h2 class="contact-title title">Contact Us</h2>
+        <div class="contact-content">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3860394304!2d-0.3817834!3d51.5287352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cbfd8f8b7e9%3A0x7d0c6a7c7c6c6b6b!2sLondon%2C%20UK!5e0!3m2!1sen!2suk!4v1600000000000" 
+                    width="100%" 
+                    height="300" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    aria-hidden="false" 
+                    tabindex="0">
+                </iframe>
+            </div>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="form-group row">
+                        <div class="form-group half">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group half">
+                            <input type="text" id="surname" name="surname"  placeholder="Surname" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="form-group half">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group half">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                    </div>
+                        <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                        <label for="privacy-policy">I have read and accept the privacy policy</label>
+                    <div class="btn-form">
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+     <!-- TODO: BOTON PARA SUBIR -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./img/logo.png" alt="Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">Email: info@medicalclinic.com</a></li>
+                    <li><a href="#">Phone: 000-000-000</a></li>
+                    <li><a href="#">Address: Example Street, 123</a></li>
+                    <li><a href="#">Hours: Monday to Friday, 9:00 AM - 6:00 PM</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
 </html>
