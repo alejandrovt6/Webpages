@@ -461,3 +461,177 @@ FOOTER
 .footer a:hover {
     text-decoration: underline;
 }
+
+/*******************************
+RESPONSIVE
+********************************/
+@media (max-width: 900px) {
+    .header,
+    .navbar {
+        padding: 0.5rem 5rem;
+    }
+
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5rem;
+    }
+
+    .about-text, .about-img {
+        max-width: 100%;
+    }
+
+    .about-img {
+        margin: 1rem 0;
+    }
+
+    .about-img img {
+        width: 50%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .btn-about {
+        font-size: 1.2rem;
+        position: static;
+        transform: none;
+        display: block;
+        margin: 2rem auto;
+    }
+
+    .services .service {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-section {
+        padding: 0 5rem;
+    }
+
+    .footer-contact {
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 810px) {
+    .info {
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 10px; 
+    }
+  
+    .contact {
+      display: block;
+    }
+  
+    .contact i {
+      margin-bottom: 5px;
+    }
+
+    .btn-submit {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 662px) {
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    /* services + pequeños */
+
+}
+
+
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 580px) {
+    .open-menu,
+    .close-menu {
+        display: block;
+        cursor: pointer;
+        margin: 1rem;
+        font-size: 1.5rem;
+        background-color: transparent;
+    }
+
+    .open-menu {
+        color: var(--bg-light);
+    }
+
+    .close-menu {
+        color: var(--bg-light);
+    }
+
+    .btn-menu {
+        background: var(--main);
+        margin: 0;
+        padding: 0.3rem;
+    }
+
+    .navbar {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+        bottom: 0;
+        z-index: 1;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .navbar.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .contact a {
+        font-size: 0.75rem;
+        margin-left: 1rem;
+    }
+
+    .contact i {
+        font-size: 0.75rem;
+    }
+}
+
