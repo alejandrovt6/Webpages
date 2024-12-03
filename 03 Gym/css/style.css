@@ -368,6 +368,7 @@ CLASSES
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding-bottom: 5rem;
 }
 
 .classes-img {
@@ -448,6 +449,131 @@ CLASSES
     font-size: 1rem;
 }
 
+/*******************************
+START NOW  
+********************************/
+.start {
+    background: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    gap: 3rem;
+}
+
+.start-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.start-title {
+    color: var(--text-light);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left; 
+}
+
+.start-text {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.start-btn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: var(--main);
+    color: var(--text-light);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: var(--main-dark);
+}
+
+.start-img {
+    flex: 1;
+}
+
+.start-img img {
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*******************************
+SCHEDULE
+********************************/
+.schedule {
+    display: flex;
+    padding: 1rem 5rem;
+    gap: 3rem;
+    background: var(--bg);
+}
+
+.schedule-content {
+    flex: 1;
+}
+
+.schedule-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.schedule-text {
+    color: var(--bg-dark) !important;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.schedule-image {
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table {
+    flex: 1.5;
+    margin-top: 3rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--main-light);
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg);
+}
+
+tr {
+    border-bottom: 1px solid var(--border);
+}
+
+/* Quitar el borde de la última fila */
+tr:last-child {
+    border-bottom: none;
+}
+
+
 
 /*******************************
 RESPONSIVE
@@ -500,6 +626,11 @@ RESPONSIVE
     .prices {
         top: auto;
         bottom: 10px;
+    }
+
+    .schedule {
+        flex-direction: column;
+        padding: 2rem 1rem;
     }
 }
 
