@@ -509,7 +509,7 @@ SCHEDULE
 ********************************/
 .schedule {
     display: flex;
-    padding: 1rem 5rem;
+    padding: 1rem 5rem 5rem;
     gap: 3rem;
     background: var(--bg);
 }
@@ -568,15 +568,267 @@ tr {
     border-bottom: 1px solid var(--border);
 }
 
-/* Quitar el borde de la última fila */
 tr:last-child {
     border-bottom: none;
 }
 
+/*******************************
+GALLERY
+********************************/
+.gallery {
+    width: 100%;
+    /* padding: 2rem 0; */
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.gallery-img {
+    aspect-ratio: 1 / 1; /* Todas las imágenes sean cuadradas */
+    overflow: hidden;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.gallery-img:hover img {
+    filter: grayscale(0%);
+}
+
+/*******************************
+SUBSCRIBE
+********************************/
+.subscribe {
+    background-color: var(--bg);
+    padding: 2rem 0 4rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    margin: 0;
+}
+
+.subscribe-title {
+    color: var(--main);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe-text {
+    color: var(--text-medium);
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.subscribe-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 2rem;
+}
+
+.subscribe-card {
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 350px; /* Ancho fijo para las tarjetas */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.title-card {
+    background-color: var(--main);
+    color: var(--text-light);
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.subscribe-card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+}
+
+.subscribe-subtitle {
+    color: var(--text-dark);
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.subscribe-card ul {
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+.subscribe-card ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.subscribe-btn {
+    width: calc(100% - 2rem);
+    margin: 0 1rem 1rem;
+    padding: 12px;
+    background-color: var(--main);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--main-dark);
+}
+
+/*******************************
+FOOTER
+********************************/
+.footer {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 4rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    max-width: 1000px; 
+    width: 100%;
+    padding: 0;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    padding-right: 1.5rem;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    background-color: var(--bg-light);
+    color: var(--text-dark); 
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: var(--main);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.submit-btn:hover {
+    background-color: var(--main-dark);
+}
+
+.info {
+    text-align: left; 
+    margin-left: 1.5rem; 
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--main);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.data-item .social-icon {
+    color: var(--main);
+    font-size: 1.5rem;
+}
+
+.data-item span {
+    color: var(--text-light);
+}
 
 
 /*******************************
-RESPONSIVE
+RESPONSIVE 
 ********************************/
 @media (max-width: 992px) {
     .about-content {
@@ -631,6 +883,26 @@ RESPONSIVE
     .schedule {
         flex-direction: column;
         padding: 2rem 1rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe-cards {
+        flex-direction: column; /* Apila las tarjetas en pantallas pequeñas */
+        align-items: center; /* Centra las tarjetas verticalmente */
+        gap: 1rem; /* Espacio entre tarjetas al apilar */
+    }
+
+    .subscribe-card {
+        width: auto; /* Permite que las tarjetas ocupen el ancho completo */
+        max-width: 400px; /* Ancho máximo para las tarjetas */
+        margin-bottom: 20px; /* Espacio entre tarjetas apiladas */
+    }
+
+    .footer-container {
+        width: 90%;
     }
 }
 
